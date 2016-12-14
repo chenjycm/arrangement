@@ -19,7 +19,8 @@
 			var leng=element.length;
 			getAllComb(element);
 			$('#out_put').empty();
-			$('#out_put').html(result.join('&nbsp&nbsp&nbsp'));
+			$('#out_put').append('组合数：'+result.length+'<br/>');
+			$('#out_put').append(result.join('　'));
 			function getAllComb(myarr)    
 			{    
 			 var len=num_each;    
